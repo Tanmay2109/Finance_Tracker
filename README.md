@@ -40,7 +40,8 @@ The application is built using a **Layered Design Pattern** to ensure high maint
 * **Service Layer:** Business logic for financial math and data validation.
 * **Persistence Layer:** Repository pattern utilizing **GSON** for flat-file JSON storage.
 
-### 📂 Directory Structure
+## 📁 Directory Structure
+
 ```text
 src/main/
 ├── java/com/finance/
@@ -51,56 +52,46 @@ src/main/
 └── resources/
     ├── fxml/           # SceneBuilder Layout files
     └── css/            # Professional UI Styling
+🛠️ Prerequisites
+Java Development Kit (JDK) 21 or higher.
 
-### 🛠️ **Prerequisites**
-* Before you begin, ensure you have the following installed on your system:
-* Java Development Kit (JDK) 21 or higher.
-* Apache Maven 3.8+ (Environment Variable mvn should be configured).
-* Git installed for version control.
-* IntelliJ IDEA (Recommended IDE).
+Apache Maven 3.8+ (Environment Variable mvn should be configured).
 
-### ⚙️ **Installation & Setup**
-1. Clone the Repository
+Git installed for version control.
+
+IntelliJ IDEA (Recommended IDE).
+
+⚙️ Installation & Setup
+Clone the Repository
 Open your terminal/command prompt and run:
 
 Bash
-git clone [https://github.com/Tanmay2109/Finance_Tracker.git](https://github.com/Tanmay2109/Finance_Tracker.git)
+git clone https://github.com/Tanmay2109/Finance_Tracker.git
 cd Finance_Tracker
-2. Maven Build
-Compile the project and download all necessary dependencies:
+Maven Build
+Compile the project and download dependencies:
 
 Bash
 mvn clean install
-3. Setup in IntelliJ IDEA
+Setup in IntelliJ IDEA
+
 Open IntelliJ and go to File > Open.
 
 Select the Finance_Tracker folder.
 
 If prompted, click "Load Maven Project".
 
-Ensure your Project SDK is set to Java 21 (File > Project Structure > Project).
+Ensure Project SDK is set to Java 21 (File > Project Structure > Project).
 
-🚀 **Running the Application**
+🚀 Running the Application
 Via Command Line:
 
+Bash
 mvn javafx:run
 Via IntelliJ IDEA:
-Open the Maven tool window (usually on the right-hand sidebar).
+
+Open the Maven tool window (Right-hand sidebar).
 
 Navigate to finance-tracker > Plugins > javafx.
 
 Double-click javafx:run.
-
-### 🛣️ **Roadmap**
-[x] Phase 1: Core UI & JSON Persistence via GSON.
-
-[ ] Phase 2: Database Integration via Hibernate 6.
-
-[ ] Phase 3: PDF Export for Monthly Financial Statements.
-
-[ ] Phase 4: Cloud Sync & User Authentication.
-
-### 👤 **Contact**
-**Tanmay Patil** 📧 tanmaypatil2109@gmail.com
-
-Created with ❤️ by Tanmay Patil
