@@ -1,84 +1,98 @@
-💹 FinanceFlow: Desktop Wealth Manager
-A high-performance JavaFX application for modern financial tracking.
+# 💹 FinanceFlow: Desktop Wealth Manager
+> **A high-performance JavaFX application for modern financial tracking.**
 
-📖 Table of Contents
-Overview
+---
 
-Core Features
+## 📖 Table of Contents
+* [Overview](#-overview)
+* [Core Features](#-core-features)
+* [System Architecture](#-system-architecture)
+* [Prerequisites](#-prerequisites)
+* [Installation & Setup](#-installation--setup)
+* [Running the Application](#-running-the-application)
+* [Roadmap](#-roadmap)
+* [Contact](#-contact)
 
-System Architecture
+---
 
-Installation & Setup
+## 🎯 Overview
+**FinanceFlow** is a comprehensive personal finance tool designed to manage daily expenses, income streams, and long-term liabilities (Loans/EMIs). It leverages a clean **Model-View-Controller (MVC)** architecture to ensure data integrity and a responsive user experience.
 
-Project Roadmap
+---
 
-Contact
+## ✨ Core Features
 
-🎯 Overview
-FinanceFlow is a comprehensive personal finance tool designed to manage daily expenses, income streams, and long-term liabilities (Loans/EMIs). It leverages a clean Model-View-Controller (MVC) architecture to ensure data integrity and a responsive user experience.
+| Feature | Description | Status |
+| :--- | :--- | :--- |
+| **Interactive Dashboard** | Real-time visual breakdown of spending using **JavaFX PieCharts**. | ✅ Done |
+| **Transaction Engine** | Categorized logging for Income and Expenses with GSON serialization. | ✅ Done |
+| **Loan & EMI Tracker** | Automated EMI calculation based on principal, interest, and tenure. | ✅ Done |
+| **Search & Filter** | Integrated functionality to filter transaction history by date/category. | ✅ Done |
+| **Database Sync** | Migration from JSON to **Hibernate 6 / MySQL** persistence. | 🛠️ In Progress |
 
-✨ Core Features
-<details>
-<summary><b>📈 Interactive Dashboard</b> (Click to expand)</summary>
-<ul>
-<li>Real-time visual breakdown of spending using <b>JavaFX PieCharts</b>.</li>
-<li>Dynamic calculation of <b>Net Balance</b> and <b>Savings Ratio</b>.</li>
-</ul>
-</details>
+---
 
-<details>
-<summary><b>💸 Transaction Engine</b> (Click to expand)</summary>
-<ul>
-<li>Categorized logging for Income and Expenses.</li>
-<li>Custom <b>LocalDateAdapter</b> for seamless JSON serialization.</li>
-<li>Integrated search and filter functionality for transaction history.</li>
-</ul>
-</details>
+## 🏗️ System Architecture
+The application is built using a **Layered Design Pattern** to ensure high maintainability:
 
-<details>
-<summary><b>🏦 Loan & EMI Tracker</b> (Click to expand)</summary>
-<ul>
-<li>Automated EMI calculation based on principal, interest, and tenure.</li>
-<li>Visual progress tracking for debt repayment.</li>
-</ul>
-</details>
+* **UI Layer:** FXML files styled with custom CSS for a modern "Dark Mode" aesthetic.
+* **Logic Layer:** Java Controllers handling event-driven user actions and data binding.
+* **Service Layer:** Business logic for financial math and data validation.
+* **Persistence Layer:** Repository pattern utilizing **GSON** for flat-file JSON storage.
 
-🏗️ System Architecture
-The application is built using a Layered Design Pattern:
-
-UI Layer: FXML files styled with modern CSS (Dark/Light mode support).
-
-Logic Layer: Java Controllers handling event-driven user actions.
-
-Persistence Layer: A Repository pattern currently using GSON for flat-file JSON storage (Transitioning to Hibernate/MySQL in Phase 2).
-
-Plaintext
+### 📂 Directory Structure
+```text
 src/main/
 ├── java/com/finance/
-│   ├── model/          # Data Entities & POJOs
-│   ├── controller/     # JavaFX UI Logic
-│   └── service/        # Business logic & JSON I/O
+│   ├── model/          # Data Entities (Expense, Income, Loan)
+│   ├── controller/     # UI Logic & Event Handling
+│   ├── service/        # Data handling & Business Logic
+│   └── MainApp.java    # Application Entry Point
 └── resources/
-    ├── fxml/           # SceneBuilder Layouts
-    └── css/            # Modern UI Styling
-⚙️ Installation & Setup
-Prerequisites
-JDK 21 or higher.
+    ├── fxml/           # SceneBuilder Layout files
+    └── css/            # Professional UI Styling
 
-Maven 3.8+ installed (or use the included Wrapper).
+🛠️ **Prerequisites**
+* Before you begin, ensure you have the following installed on your system:
+* Java Development Kit (JDK) 21 or higher.
+* Apache Maven 3.8+ (Environment Variable mvn should be configured).
+* Git installed for version control.
+* IntelliJ IDEA (Recommended IDE).
 
-Execution
-PowerShell
-# 1. Clone the repository
-git clone https://github.com/Tanmay2109/Finance_Tracker.git
+⚙️ **Installation & Setup**
+1. Clone the Repository
+Open your terminal/command prompt and run:
 
-# 2. Build the project
+Bash
+git clone [https://github.com/Tanmay2109/Finance_Tracker.git](https://github.com/Tanmay2109/Finance_Tracker.git)
+cd Finance_Tracker
+2. Maven Build
+Compile the project and download all necessary dependencies:
+
+Bash
 mvn clean install
+3. Setup in IntelliJ IDEA
+Open IntelliJ and go to File > Open.
 
-# 3. Run the application
+Select the Finance_Tracker folder.
+
+If prompted, click "Load Maven Project".
+
+Ensure your Project SDK is set to Java 21 (File > Project Structure > Project).
+
+🚀 Running the Application
+Via Command Line:
+Bash
 mvn javafx:run
-🛤️ Roadmap
-[x] Phase 1: Core UI & JSON Persistence.
+Via IntelliJ IDEA:
+Open the Maven tool window (usually on the right-hand sidebar).
+
+Navigate to finance-tracker > Plugins > javafx.
+
+Double-click javafx:run.
+
+🛣️ Roadmap
+[x] Phase 1: Core UI & JSON Persistence via GSON.
 
 [ ] Phase 2: Database Integration via Hibernate 6.
 
@@ -89,4 +103,4 @@ mvn javafx:run
 👤 Contact
 Tanmay Patil 📧 tanmaypatil2109@gmail.com
 
-🔗 GitHub Profile
+Created with ❤️ by Tanmay Patil
