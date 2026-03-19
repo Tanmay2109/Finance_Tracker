@@ -52,14 +52,14 @@ src/main/
     ├── fxml/           # SceneBuilder Layout files
     └── css/            # Professional UI Styling
 
-🛠️ **Prerequisites**
+### 🛠️ **Prerequisites**
 * Before you begin, ensure you have the following installed on your system:
 * Java Development Kit (JDK) 21 or higher.
 * Apache Maven 3.8+ (Environment Variable mvn should be configured).
 * Git installed for version control.
 * IntelliJ IDEA (Recommended IDE).
 
-⚙️ **Installation & Setup**
+### ⚙️ **Installation & Setup**
 1. Clone the Repository
 Open your terminal/command prompt and run:
 
@@ -80,9 +80,9 @@ If prompted, click "Load Maven Project".
 
 Ensure your Project SDK is set to Java 21 (File > Project Structure > Project).
 
-🚀 Running the Application
+🚀 **Running the Application**
 Via Command Line:
-Bash
+
 mvn javafx:run
 Via IntelliJ IDEA:
 Open the Maven tool window (usually on the right-hand sidebar).
@@ -91,7 +91,7 @@ Navigate to finance-tracker > Plugins > javafx.
 
 Double-click javafx:run.
 
-🛣️ Roadmap
+### 🛣️ **Roadmap**
 [x] Phase 1: Core UI & JSON Persistence via GSON.
 
 [ ] Phase 2: Database Integration via Hibernate 6.
@@ -100,7 +100,7 @@ Double-click javafx:run.
 
 [ ] Phase 4: Cloud Sync & User Authentication.
 
-👤 Contact
-Tanmay Patil 📧 tanmaypatil2109@gmail.com
+### 👤 **Contact**
+**Tanmay Patil** 📧 tanmaypatil2109@gmail.com
 
 Created with ❤️ by Tanmay Patil
