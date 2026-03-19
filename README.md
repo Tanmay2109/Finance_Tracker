@@ -65,10 +65,11 @@ cd Finance_Tracker
 
 # Build and install dependencies
 mvn clean install
+
 🚀 Running the Application
 Option A: Terminal (Universal)
-Bash
 mvn javafx:run
+
 Option B: IntelliJ IDEA
 Open the Maven sidebar (Right side).
 
