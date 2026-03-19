@@ -1,0 +1,28 @@
+.root {
+    -fx-font-family: "Segoe UI";
+}
+
+/* Cards */
+.card {
+    -fx-background-color: white;
+    -fx-padding: 15;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8,0,0,2);
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+.button:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+/* Table */
+.table-view {
+    -fx-background-radius: 10;
+}

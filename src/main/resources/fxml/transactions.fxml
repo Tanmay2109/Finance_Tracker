@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.finance.controller.TransactionController"
+            style="-fx-background-color: #f1f5f9;">
+
+    <!-- HEADER -->
+    <top>
+        <HBox style="-fx-padding: 15; -fx-background-color: #1e293b;">
+            <Label text="Transactions"
+                   style="-fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold;" />
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="15" style="-fx-padding: 20;">
+
+            <!-- ===== EXPENSE / INCOME ===== -->
+            <TitledPane text="Add Expense / Income" expanded="true">
+                <HBox spacing="10" style="-fx-padding: 10;">
+
+                    <TextField fx:id="titleField" promptText="Title" prefWidth="150"/>
+                    <TextField fx:id="amountField" promptText="Amount" prefWidth="120"/>
+                    <TextField fx:id="categoryField" promptText="Category" prefWidth="120"/>
+
+                    <Button text="Add Expense" onAction="#addExpense"
+                            style="-fx-background-color: #ef4444; -fx-text-fill: white;" />
+
+                    <Button text="Add Income" onAction="#addIncome"
+                            style="-fx-background-color: #22c55e; -fx-text-fill: white;" />
+
+                </HBox>
+            </TitledPane>
+
+            <!-- ===== LOAN ===== -->
+            <TitledPane text="Add Loan (EMI System)" expanded="false">
+                <HBox spacing="10" style="-fx-padding: 10;">
+
+                    <TextField fx:id="loanNameField" promptText="Loan Name" prefWidth="150"/>
+                    <TextField fx:id="loanAmountField" promptText="Amount" prefWidth="120"/>
+                    <TextField fx:id="loanRateField" promptText="Interest %" prefWidth="100"/>
+                    <TextField fx:id="loanMonthsField" promptText="Months" prefWidth="100"/>
+
+                    <Button text="Add Loan" onAction="#addLoan"
+                            style="-fx-background-color: #3b82f6; -fx-text-fill: white;" />
+
+                </HBox>
+            </TitledPane>
+
+            <!-- ===== TABLE ===== -->
+            <TableView fx:id="table" prefHeight="400">
+
+                <columns>
+
+                    <TableColumn fx:id="titleCol" text="Title" prefWidth="150"/>
+                    <TableColumn fx:id="amountCol" text="Amount" prefWidth="100"/>
+                    <TableColumn fx:id="categoryCol" text="Category" prefWidth="120"/>
+                    <TableColumn fx:id="dateCol" text="Date" prefWidth="120"/>
+                    <TableColumn fx:id="actionCol" text="Actions" prefWidth="180"/>
+
+                </columns>
+
+            </TableView>
+
+        </VBox>
+    </center>
+
+</BorderPane>
