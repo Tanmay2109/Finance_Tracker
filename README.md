@@ -41,8 +41,8 @@ src/main/
     ├── fxml/           # UI Layout files
     └── css/            # Modern UI Styling
 
-
-⚙️ Installation & Setup
+---
+##⚙️ **Installation & Setup**
 Clone the repository
 
 Bash
@@ -57,18 +57,10 @@ Run the application
 
 Bash
 mvn javafx:run
-📈 Roadmap
-[x] Basic Expense/Income Tracking
 
-[x] JSON Local Storage
 
-[ ] Next: Migrate to Hibernate ORM & MySQL Database
-
-[ ] Next: Export reports to PDF/Excel
-
-[ ] Next: User Authentication & Multi-profile support
-
-👤 Author
+---
+##👤 **Author**
 Tanmay Patil
 
 GitHub: @Tanmay2109
