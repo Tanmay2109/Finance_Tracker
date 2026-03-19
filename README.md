@@ -1,12 +1,92 @@
-To make this truly industry-level, we need to include sections that recruiters and senior developers look for: System Architecture, Key Logic, and API/Data flow.Here is a refined, professional README.md structure tailored for your specific project.💹 FinanceFlow: Personal Wealth ManagementFinanceFlow is a robust desktop solution designed to bridge the gap between simple expense tracking and professional financial management. Built with a focus on clean MVC architecture, it provides users with a centralized hub for monitoring cash flow, liabilities (Loans), and savings targets.🏗️ System ArchitectureThe application follows the Layered Architecture pattern to ensure high maintainability and scalability for future database migrations.View Layer (FXML/CSS): Decoupled UI logic using XML-based layouts and externalized styling.Controller Layer (Java): Intermediary handling event-driven logic and UI data binding.Service Layer: Business logic for financial calculations (EMI math, monthly aggregations).Persistence Layer: Currently utilizing GSON for JSON serialization with a repository pattern, ready for Hibernate ORM integration.🌟 Key Functional Modules📊 Real-Time Analytics DashboardDynamic PieChart integration showing spending distribution.Monthly summary cards for Net Balance, Total Savings, and Debt-to-Income Ratio.💸 Transaction EngineCategorized logging for Income and Expenses.Custom LocalDateAdapter for seamless JSON date serialization.Search and filter capabilities by date range and category.🏦 Loan & EMI ManagementAutomated EMI calculation logic.Visual tracking of loan progress and remaining tenure.🛠️ Technical Implementation DetailsCore StackTechnologyUsageJavaFX 21Modern GUI development with hardware acceleration.MavenDependency management and build lifecycle.GSONHigh-performance JSON processing.ControlsFX(Optional) For advanced UI components like search bars.Project SetupBash# Clone the project
+💹 FinanceFlow: Desktop Wealth Manager
+A high-performance JavaFX application for modern financial tracking.
+
+📖 Table of Contents
+Overview
+
+Core Features
+
+System Architecture
+
+Installation & Setup
+
+Project Roadmap
+
+Contact
+
+🎯 Overview
+FinanceFlow is a comprehensive personal finance tool designed to manage daily expenses, income streams, and long-term liabilities (Loans/EMIs). It leverages a clean Model-View-Controller (MVC) architecture to ensure data integrity and a responsive user experience.
+
+✨ Core Features
+<details>
+<summary><b>📈 Interactive Dashboard</b> (Click to expand)</summary>
+<ul>
+<li>Real-time visual breakdown of spending using <b>JavaFX PieCharts</b>.</li>
+<li>Dynamic calculation of <b>Net Balance</b> and <b>Savings Ratio</b>.</li>
+</ul>
+</details>
+
+<details>
+<summary><b>💸 Transaction Engine</b> (Click to expand)</summary>
+<ul>
+<li>Categorized logging for Income and Expenses.</li>
+<li>Custom <b>LocalDateAdapter</b> for seamless JSON serialization.</li>
+<li>Integrated search and filter functionality for transaction history.</li>
+</ul>
+</details>
+
+<details>
+<summary><b>🏦 Loan & EMI Tracker</b> (Click to expand)</summary>
+<ul>
+<li>Automated EMI calculation based on principal, interest, and tenure.</li>
+<li>Visual progress tracking for debt repayment.</li>
+</ul>
+</details>
+
+🏗️ System Architecture
+The application is built using a Layered Design Pattern:
+
+UI Layer: FXML files styled with modern CSS (Dark/Light mode support).
+
+Logic Layer: Java Controllers handling event-driven user actions.
+
+Persistence Layer: A Repository pattern currently using GSON for flat-file JSON storage (Transitioning to Hibernate/MySQL in Phase 2).
+
+Plaintext
+src/main/
+├── java/com/finance/
+│   ├── model/          # Data Entities & POJOs
+│   ├── controller/     # JavaFX UI Logic
+│   └── service/        # Business logic & JSON I/O
+└── resources/
+    ├── fxml/           # SceneBuilder Layouts
+    └── css/            # Modern UI Styling
+⚙️ Installation & Setup
+Prerequisites
+JDK 21 or higher.
+
+Maven 3.8+ installed (or use the included Wrapper).
+
+Execution
+PowerShell
+# 1. Clone the repository
 git clone https://github.com/Tanmay2109/Finance_Tracker.git
 
-# Navigate to directory
-cd Finance_Tracker
+# 2. Build the project
+mvn clean install
 
-# Build the JAR
-mvn clean package
-
-# Run the Application
+# 3. Run the application
 mvn javafx:run
-🎨 UI/UX Design Philosophy"Clarity over Complexity."The interface utilizes a Dark Mode Primary Theme with high-contrast accent colors for financial indicators:#2ECC71 (Emerald): Positive Cash Flow#E74C3C (Alizarin): Expenses/Debts#3498DB (Peter River): Information & Navigation🛣️ Development Roadmap[x] Initial Project Setup & Maven Configuration.[x] JSON Persistence Layer with GSON.[x] Dashboard UI with JavaFX Charts.[ ] Phase 2: Integration of Hibernate 6 with MySQL/PostgreSQL.[ ] Phase 3: User Authentication & Multi-currency support.[ ] Phase 4: PDF Statement Generation using iText.🤝 ContactTanmay Patil 📧 tanmaypatil2109@gmail.com🔗 LinkedIn Profile
+🛤️ Roadmap
+[x] Phase 1: Core UI & JSON Persistence.
+
+[ ] Phase 2: Database Integration via Hibernate 6.
+
+[ ] Phase 3: PDF Export for Monthly Financial Statements.
+
+[ ] Phase 4: Cloud Sync & User Authentication.
+
+👤 Contact
+Tanmay Patil 📧 tanmaypatil2109@gmail.com
+
+🔗 GitHub Profile
