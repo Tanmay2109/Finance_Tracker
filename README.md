@@ -1,68 +1,12 @@
-# 💰 Personal Finance Tracker
+To make this truly industry-level, we need to include sections that recruiters and senior developers look for: System Architecture, Key Logic, and API/Data flow.Here is a refined, professional README.md structure tailored for your specific project.💹 FinanceFlow: Personal Wealth ManagementFinanceFlow is a robust desktop solution designed to bridge the gap between simple expense tracking and professional financial management. Built with a focus on clean MVC architecture, it provides users with a centralized hub for monitoring cash flow, liabilities (Loans), and savings targets.🏗️ System ArchitectureThe application follows the Layered Architecture pattern to ensure high maintainability and scalability for future database migrations.View Layer (FXML/CSS): Decoupled UI logic using XML-based layouts and externalized styling.Controller Layer (Java): Intermediary handling event-driven logic and UI data binding.Service Layer: Business logic for financial calculations (EMI math, monthly aggregations).Persistence Layer: Currently utilizing GSON for JSON serialization with a repository pattern, ready for Hibernate ORM integration.🌟 Key Functional Modules📊 Real-Time Analytics DashboardDynamic PieChart integration showing spending distribution.Monthly summary cards for Net Balance, Total Savings, and Debt-to-Income Ratio.💸 Transaction EngineCategorized logging for Income and Expenses.Custom LocalDateAdapter for seamless JSON date serialization.Search and filter capabilities by date range and category.🏦 Loan & EMI ManagementAutomated EMI calculation logic.Visual tracking of loan progress and remaining tenure.🛠️ Technical Implementation DetailsCore StackTechnologyUsageJavaFX 21Modern GUI development with hardware acceleration.MavenDependency management and build lifecycle.GSONHigh-performance JSON processing.ControlsFX(Optional) For advanced UI components like search bars.Project SetupBash# Clone the project
+git clone https://github.com/Tanmay2109/Finance_Tracker.git
 
-A professional-grade desktop application built with **Java 21** and **JavaFX**. This tool helps users manage their financial health by tracking expenses, income, and loan EMIs with a modern, interactive dashboard.
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Maven](https://img.shields.io/badge/Apache_Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
-![JavaFX](https://img.shields.io/badge/JavaFX-blue?style=for-the-badge&logo=java&logoColor=white)
-
----
-
-## 🚀 Features
-
--   **Interactive Dashboard:** Real-time visualization of spending patterns using JavaFX PieCharts.
--   **Transaction Management:** Full CRUD (Create, Read, Update, Delete) operations for Expenses and Income.
--   **Loan & EMI Tracker:** Dedicated module to monitor outstanding loans and calculate monthly commitments.
--   **Data Persistence:** Currently uses **GSON** for JSON-based local storage (Migrating to **Hibernate/MySQL** soon).
--   **Modern UI/UX:** Clean, dark-themed interface with CSS styling and responsive layouts.
-
----
-
-## 🛠️ Tech Stack
-
--   **Language:** Java 21
--   **Build Tool:** Maven
--   **Framework:** JavaFX (MVC Architecture)
--   **Library:** Google GSON (JSON Parsing)
--   **Styling:** Custom CSS (JavaFX Modena override)
-
----
-
-## 📂 Project Structure
-
-```text
-src/main/
-├── java/com/finance/
-│   ├── model/          # Data Entities (Expense, Income, Loan)
-│   ├── controller/     # UI Logic & Event Handling
-│   ├── service/        # Data handling (JSON I/O)
-│   └── MainApp.java    # Application Entry Point
-└── resources/
-    ├── fxml/           # UI Layout files
-    └── css/            # Modern UI Styling
-
----
-##⚙️ **Installation & Setup**
-Clone the repository
-
-Bash
-git clone [https://github.com/Tanmay2109/Finance_Tracker.git](https://github.com/Tanmay2109/Finance_Tracker.git)
+# Navigate to directory
 cd Finance_Tracker
-Build the project
-Make sure you have Maven installed, or use the wrapper:
 
-Bash
-mvn clean install
-Run the application
+# Build the JAR
+mvn clean package
 
-Bash
+# Run the Application
 mvn javafx:run
-
-
----
-##👤 **Author**
-Tanmay Patil
-
-GitHub: @Tanmay2109
-
-Email: tanmaypatil2109@gmail.com
+🎨 UI/UX Design Philosophy"Clarity over Complexity."The interface utilizes a Dark Mode Primary Theme with high-contrast accent colors for financial indicators:#2ECC71 (Emerald): Positive Cash Flow#E74C3C (Alizarin): Expenses/Debts#3498DB (Peter River): Information & Navigation🛣️ Development Roadmap[x] Initial Project Setup & Maven Configuration.[x] JSON Persistence Layer with GSON.[x] Dashboard UI with JavaFX Charts.[ ] Phase 2: Integration of Hibernate 6 with MySQL/PostgreSQL.[ ] Phase 3: User Authentication & Multi-currency support.[ ] Phase 4: PDF Statement Generation using iText.🤝 ContactTanmay Patil 📧 tanmaypatil2109@gmail.com🔗 LinkedIn Profile
